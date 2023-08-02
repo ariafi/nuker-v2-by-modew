@@ -32,7 +32,7 @@ client.on('message', function(message){
                         deny: ['SEND_MESSAGES']
                     }
                 ]
-            }).then(newChannel => newChannel.send('# آیسا هیچ وقت با احساسات کسی بازی نکن خب؟؟\n@everyone'));
+            }).then(newChannel => newChannel.send('@everyone'));
         }
     }
 });
