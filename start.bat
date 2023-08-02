@@ -1,5 +1,5 @@
 @echo off 
-title Start Nuker
+title MoDeW Nuker
 :START 
 node index.js
 goto START
