@@ -9,4 +9,4 @@ _________________________________________
 - `!nuck-modew` send to text-channel in server
 - starting nuck . . .
 _________________________________________
-my discord server : https://discord.gg/jBBc6JYT
+my discord server : [JOIN](https://discord.gg/tckXBhv3Rw)
