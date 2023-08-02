@@ -1,5 +1,5 @@
 @echo off 
-title Welcome M o D i R
+title Start Nuker
 :START 
 node index.js
 goto START
